@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(17, 15, 29);
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;         
+    margin: 0;             
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    max-width: 90%; /* Responsive width */
+}
+
+h2 {
+    text-align: center; 
+    color: rgb(17, 15, 29);
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: rgb(17, 15, 29);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(30, 30, 50);
+}
+
+.three {
+    list-style-type: none; 
+    padding: 0;           
+    margin-top: 20px;    
+}
+
+.three li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.three li span {
+    flex-grow: 1; /* Allow text to take up available space */
+    margin-right: 10px; /* Space between text and button */
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: darkred; 
+}
